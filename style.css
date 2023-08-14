@@ -4,7 +4,8 @@
 }
 
 body{
-    width: 100%;
+    width: auto;
+    box-sizing: border-box;
     font-family: sans-serif;
     display: flex;
     flex-direction: row;
@@ -242,5 +243,13 @@ td.table2{
         align-items: center;
         
     
+    }
+
+    h2{
+        text-align: center;
+    }
+
+    td.table2{
+        padding: 20px;
     }
 }
