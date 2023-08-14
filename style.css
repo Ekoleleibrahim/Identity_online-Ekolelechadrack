@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: auto;
+}
+
+.h1{
+    color: white;
+    text-transform: capitalize;
+}
+
+.message-indicatif{
+    color: rgb(196, 196, 196);
+    padding: 5px;
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+    from{
+        margin-left: 100%;
+        width: 300%;
+    }
+}
+
+.conteneur{
+    width:60%;
+    height: auto;
+    background-color: rgb(14, 22, 46);
+    color: white;
+    
+}
+
+.section-user,.section-infos,.section-competences,.section-qualite,.section-centre{
+    padding:20px 40px;
+    text-align: justify;
+    
+}
+
+.section-exp{
+    color: black;
+    padding-top: 30px;
+    
+}
+
+h1{
+    color: white;
+    text-transform: capitalize;
+}
+
+figure{
+    padding-top: 30px;
+}
+
+figcaption{
+    padding-top: 20px;
+}
+
+.center,.section-user{
+    text-align: center;
+}
+
+.infos{
+    margin-top: 15px;
+    line-height: 1.5em;
+    list-style-type: none;
+    
+}
+
+.nom,.mail,.adresse{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.eko,.maileko,.telephone{
+    padding-top: 5px;
+    padding-left: 5px;
+    
+}
+
+address{
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.maileko,.tel{
+    text-decoration: none;
+    color: white;
+}
+
+.tel{
+    padding-left: 5px;
+}
+
+.tel,address{
+    position: relative;
+    bottom: 10px;
+}
+
+.maileko:hover,.tel:hover{
+    border-bottom: 3px solid white;
+    padding-bottom: 2px;
+}
+
+.competence,.qualite,.interet{
+    padding: 20px 20px 0 20px;
+    line-height: 1.5em;
+}
+
+.langues{
+    display: flex;
+    flex-direction: row;
+}
+
+.langue1{
+    gap: 80px;
+}
+
+.langue2{
+    gap: 90px;
+}
+
+.langue3{
+    gap: 28px;
+}
+
+.qualite,.interet{
+    list-style-type: square;
+}
+
+main{
+    width: auto;
+    padding: 30px;
+}
+
+.section-profil h2,.section-exp h2,.section-formation h2{
+   padding-bottom: 20px; 
+   text-align: justify;
+}
+
+.table-formation,.table-exp{
+    width:auto;
+}
+
+.table-formation{
+    margin: auto;
+}
+
+.table-exp,th{
+    padding: 30px;
+}
+
+td.table2{
+    padding: 50px;
+    background-color: rgb(220, 220, 220);
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.element1,.element2,.element3{
+    text-align: center;
+}
+
+.exp{
+    width: auto;
+    padding: 20px;
+    line-height: 1.5em;
+}
+
+.item1{
+    display: flex;
+    gap: 100px;
+}
+
+.item2{
+    display: flex;
+    gap: 50px;
+}
+
+.adresse:hover{
+    text-decoration:none;
+}
+
+.reseau1:hover{
+    text-decoration: 3px solid blue;
+    
+}
+
+.logos1,.logos2,.logos3,.logos4,.logos5,.logos6,.logos7{
+    opacity: 0.5;
+}
+
+.logos1:hover,.logos2:hover,.logos3:hover,.logos4:hover,.logos5:hover,.logos6:hover,.logos7:hover{
+    opacity:1;
+}
+
+.footer{
+    background-color: rgb(14, 22, 46);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+@media all and (max-width:800px) {
+    body{
+        display: block;
+        width:auto;
+    }
+
+    .conteneur{
+        width:100%;
+    }
+
+    th,td{
+        padding: 10px;
+        line-height: 1.5em;
+    }
+
+    main{
+        background-color: rgb(245, 241, 241);
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        
+    
+    }
+}
