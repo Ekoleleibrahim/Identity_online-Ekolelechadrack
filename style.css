@@ -29,8 +29,8 @@ body{
 
 @keyframes slidein {
     from{
-        margin-left: 100%;
-        width: 300%;
+        margin-left: 50%;
+        width: auto;
     }
 }
 
@@ -252,4 +252,17 @@ td.table2{
     td.table2{
         padding: 20px;
     }
+
+    .langue1{
+        gap: 20px;
+    }
+    
+    .langue2{
+        gap: 20px;
+    }
+    
+    .langue3{
+        gap: 10px;
+    }
+    
 }
