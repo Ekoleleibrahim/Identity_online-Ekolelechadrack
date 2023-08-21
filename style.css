@@ -5,6 +5,7 @@
 
 body{
     width: auto;
+    height: auto;
     box-sizing: border-box;
     font-family: sans-serif;
     display: flex;
@@ -14,7 +15,8 @@ body{
     margin: auto;
 }
 
-.h1{
+h1{
+    text-align: center;
     color: white;
     text-transform: capitalize;
 }
@@ -241,8 +243,6 @@ td.table2{
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
-        
-    
     }
 
     h2{
@@ -265,4 +265,151 @@ td.table2{
         gap: 10px;
     }
     
+}
+
+@media all and (min-width:820px) and (max-width:1180px)
+{
+    body{
+        width:auto;
+    }
+    
+    .conteneur{
+        padding-left: 130px;
+    }
+
+    main{
+        width: auto;
+        padding: 10px;
+    }
+
+    .langue1{
+        gap: 10px;
+    }
+    
+    .langue2{
+        gap: 20px;
+    }
+    
+    .langue3{
+        gap: 10px;
+    }
+    
+}
+
+@media all and (min-width:912px) and (max-width:1368px)
+{
+    body{
+        width:auto;
+    }
+
+    .conteneur{
+        width: 100%;
+        padding-left: 10px;
+    }
+
+}
+
+@media all and (min-width:360px) and (max-width:740px)
+{
+    .progress{
+        padding-left: 40px;
+        font-size: 1.5em;
+    }
+
+}
+
+@media all and (min-width:375px) and (max-width:667px)
+{
+    .progress{
+        padding-left: 40px;
+        font-size: 1.5em;
+    }
+
+}
+
+@media all and (min-width:393px) and (max-width:851px)
+{
+    .progress{
+        padding-left: 40px;
+        font-size: 1.5em;
+    }
+}
+
+@media all and (min-width:912px) and (max-width:1368px)
+{
+    body{
+        display: grid;
+        grid-template-areas:"conteneur main"
+                            "footer footer"
+        ;
+        
+    }
+
+    .conteneur{
+        grid-area: conteneur;
+        }
+
+    main{
+        grid-area: main;
+        overflow-x: auto;
+        padding-left: 15px;
+        }
+
+    .footer{
+        grid-area: footer;
+        flex-direction: row;
+        }
+    
+}
+
+@media all and (min-width:768px) and (max-width:1024px)
+{
+    .progress{
+        padding-left: 40px;
+        font-size: 2em;
+    }
+
+    .langue1{
+        gap: 70px;
+    }
+    
+    .langue2{
+        gap: 80px;
+    }
+    
+    .langue3{
+        gap: 25px;
+    }
+
+}
+
+@media all and (min-width:280px) and (max-width:653px)
+{
+    body{
+        width:auto;
+    }
+
+    .conteneur{
+        width:100%;
+    }
+
+    .section-user,.section-infos,.section-competences,.section-qualite,.section-centre{
+        padding:10px;
+        text-align: justify;  
+    }
+
+    figure,figcaption{
+        text-align: center;
+    }
+
+    .footer{
+        padding: 30px;
+        gap: 5px;
+    
+    }
+
+    .langues{
+        display: block;
+    }
+
 }
